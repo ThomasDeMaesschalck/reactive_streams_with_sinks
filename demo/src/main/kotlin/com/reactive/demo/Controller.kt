@@ -5,6 +5,7 @@ import org.springframework.http.codec.ServerSentEvent
 import org.springframework.web.bind.annotation.*
 import reactor.core.publisher.Flux
 
+@CrossOrigin
 @RestController
 class Controller(val service: Service) {
 
