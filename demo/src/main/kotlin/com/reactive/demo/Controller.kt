@@ -10,7 +10,7 @@ class Controller(val service: Service) {
 
     @PutMapping("/test/{number}")
     fun update(@PathVariable number: Int) {
-service.emitNext(number)
+        service.emitNext(number)
     }
 
     @GetMapping(produces = [MediaType.TEXT_EVENT_STREAM_VALUE])

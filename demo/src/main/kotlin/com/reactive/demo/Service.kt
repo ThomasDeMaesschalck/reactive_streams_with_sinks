@@ -9,7 +9,7 @@ class Service {
     val sink: Sinks.Many<Int> = Sinks.many().multicast().directBestEffort()
 
     fun emitNext(number: Int) {
-      return  sink.emitNext(number, Sinks.EmitFailureHandler.FAIL_FAST)
+        return sink.emitNext(number, Sinks.EmitFailureHandler.FAIL_FAST)
     }
 
 }
